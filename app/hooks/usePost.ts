@@ -14,5 +14,7 @@ export const usePosts = () => {
     return useQuery<Post[], Error>({
         queryKey: ['posts'],
         queryFn: fetchPosts,
+        staleTime: 0, 
+        refetchOnWindowFocus: true,
       });
 };
