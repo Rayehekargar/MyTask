@@ -1,5 +1,4 @@
 
-import { Post } from '../types';
 import List from '../_components/List';
 import React, { Suspense } from 'react';
 const Loading = () => <div>Loading posts...Please waite</div>;
