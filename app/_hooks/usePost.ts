@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Post } from '../types'; 
 
 const fetchPosts = async () => {
+
   try {
   const response = await fetch('/api/posts'); 
   console.log('Response:', response); 
