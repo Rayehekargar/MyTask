@@ -1,5 +1,5 @@
 "use client";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../_context/AuthContext";
 
 export default function Settings() {
   const { canAccessSettings } = useAuth();

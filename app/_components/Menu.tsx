@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../_context/AuthContext";
 import React, { useState } from "react";
 
 const Menu = () => {

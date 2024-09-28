@@ -1,10 +1,9 @@
 "use client";
 import { Post } from "../types";
-import { usePosts } from "../hooks/usePost";
+import { usePosts } from "../_hooks/usePost";
 
 const List = () => {
-  const { data, error, isLoading } = usePosts();
-  if (isLoading) return <div>Loading...</div>;
+  const { data, error } = usePosts();
   if (error) return <div>Error: {error.message}</div>;
   return (
     <ul className="p-4">
