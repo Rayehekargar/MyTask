@@ -10,7 +10,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<User>({ name: "Bob" });
+  const [user, setUser] = useState<User>({ name: "Andy" });
 
   // کاربران مجاز به دسترسی به تنظیمات
   const usersWithAccess = ["Alice", "Bob"];
